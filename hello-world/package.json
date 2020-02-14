@@ -1,0 +1,25 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Getting started with WarpJS",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --progress --mode=production",
+    "deploy": "warp-deploy --asset-dir=dist ."
+  },
+  "dependencies": {
+    "@warpjs/engine": "^1.1.0-rc1",
+    "@warpjs/warp": "^2.0.1"
+  },
+  "devDependencies": {
+    "@warpjs/webpack-plugin": "^1.1.0-rc1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
