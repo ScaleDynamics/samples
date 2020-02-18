@@ -17,7 +17,7 @@ module.exports = {
       include: [/\.js$/],
       config: {
         project: {
-          userId: 'YOUR_USER_ID', // insert your "User ID" here
+          userId: 'YOUR_USER_ID', // Go to starbase.warpjs.com to get your User ID
           name: 'demo'
         }
       }
