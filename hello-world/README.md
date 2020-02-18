@@ -1,5 +1,5 @@
 # Sample - Hello World
 
-Getting started with [WarpJS](https://warpsjs.com).
+Getting started with [WarpJS](https://warpjs.com).
 
-See documentation on [warpjs.dev](https://warpsjs.dev/docs/getting-started)
+See documentation on [warpjs.dev](https://warpjs.dev/docs/getting-started)
