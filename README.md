@@ -14,6 +14,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 
 - [Hello World](./hello-world) - A quickstart sample from the [Getting Started](https://warpjs.dev/docs/getting-started).
 - [HTTP Proxy](./http-proxy) - A simple HTTP Proxy with Axios. Project from the [Getting Started (step 2)](https://warpjs.dev/docs/nodejs-modules).
+- [TensorFlow.js Toxicity](./tensorflowjs-toxicity) - Execute the toxicity model for TensorFlow.js on WarpJS
 
 ## License
 
