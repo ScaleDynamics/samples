@@ -20,7 +20,12 @@ const classify = async inputs => {
   const predictions = await model.classify(inputs)
 
   // check toxicity results
-  const toxic = predictions.some(({ results }) => results[0].match)
+  //
+  // `predictions` is an array of objects, one for each prediction head,
+  // that contains the raw probabilities for each input along with the
+  // final prediction in `match` (either `true` or `false`).
+  // If neither prediction exceeds the threshold, `match` is `null`.
+  const toxic = predictions.some(({ results }) => results[0].match !== false)
 
   return toxic
 }
