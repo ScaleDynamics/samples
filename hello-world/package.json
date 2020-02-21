@@ -10,11 +10,11 @@
     "deploy": "warp-deploy --asset-dir=dist ."
   },
   "dependencies": {
-    "@warpjs/engine": "^1.1.0-rc1",
+    "@warpjs/engine": "^1.1.0",
     "@warpjs/warp": "^2.0.1"
   },
   "devDependencies": {
-    "@warpjs/webpack-plugin": "^1.1.0-rc1",
+    "@warpjs/webpack-plugin": "^1.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
