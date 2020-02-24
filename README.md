@@ -12,6 +12,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 
 ## Samples
 
+- [Dark Sky API](./darksky) - Get the weather from the Dark Sky REST API
 - [Hello World](./hello-world) - A quickstart sample from the [Getting Started](https://warpjs.dev/docs/getting-started)
 - [HTTP Proxy](./http-proxy) - A simple HTTP Proxy with Axios. Project from the [Getting Started (step 2)](https://warpjs.dev/docs/nodejs-modules)
 - [MongoDB Movies](./mongodb-movies) - Fetch a movie database with WarpJS and MongoDB driver for Node.js
