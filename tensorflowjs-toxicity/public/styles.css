@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -24,7 +26,7 @@ body {
 form {
   margin: auto;
   border-radius: 5px;
-  background-color:rgb(84, 90, 126);
+  background-color: rgb(84, 90, 126);
   padding: 20px;
   max-width: 600px;
 }
@@ -43,7 +45,7 @@ select {
 
 button {
   width: 100%;
-  background-color:rgb(124, 129, 202);
+  background-color: rgb(124, 129, 202);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

@@ -25,9 +25,9 @@ const fetchUsers = async () => {
 }
 
 // on load
-warper.call(fetchUsers).then(response => {
+warper.call(fetchUsers).then((response) => {
   result.innerHTML += `
     <h2>User List</h2>
-    <div>${response.map(user => `${user.id} - ${user.name}`).join('<br>')}</div>
+    <div>${response.map((user) => `${user.id} - ${user.name}`).join('<br>')}</div>
   `
 })

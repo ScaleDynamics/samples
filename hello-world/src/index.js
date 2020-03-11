@@ -17,10 +17,10 @@ const hello = (name) => {
   // warp directive
   'warp +server -client'
 
-  return `Hello ${name} from Node.js ${process.version} 👋`
+  return `Hello ${name} from Node.js ${process.version}`
 }
 
 // on load, call function with WarpJS
-warper.call(hello, 'World').then(response => {
+warper.call(hello, 'World').then((response) => {
   result.innerHTML += response
 })

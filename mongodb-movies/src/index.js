@@ -58,13 +58,17 @@ document.getElementById('form').addEventListener('submit', async (event) => {
   if (movies && movies.length) {
     result.innerHTML = `
       <ul>
-        ${movies.map((movie) => `
+        ${movies
+          .map(
+            (movie) => `
           <li>
             <h2>${movie.title} (${movie.year})</h2>
             <img src="${movie.poster}" width="100"/>
             <p>${movie.plot}</p>
           </li>
-        `).join('')}
+        `
+          )
+          .join('')}
       </ul>`
   } else {
     result.innerHTML = `no results found for "${search.value}"`

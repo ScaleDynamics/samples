@@ -30,7 +30,7 @@ const getForecast = async (latitude, longitude) => {
 
 // on load
 result.innerHTML = '<h2>⚙️ Calling API...</h2>'
-warper.call(getForecast, 48.1305054, -1.6232634).then(prevision => {
+warper.call(getForecast, 48.1305054, -1.6232634).then((prevision) => {
   result.innerHTML = `
     <h2>Forecast prevision for WarpJS home address</h2>
     <div>${prevision}</div>

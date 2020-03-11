@@ -13,7 +13,7 @@ import engine from '@warpjs/engine'
 engine.init()
 
 // warp function
-const classify = async inputs => {
+const classify = async (inputs) => {
   'warp +server -client'
 
   // predict with tensorflow model
@@ -31,7 +31,7 @@ const classify = async inputs => {
 }
 
 // on submit form
-document.getElementById('form').addEventListener('submit', async event => {
+document.getElementById('form').addEventListener('submit', async (event) => {
   event.preventDefault()
   result.innerHTML = '<h2>Remote inference running</h2>'
   const text = classifyNewTextInput.value
