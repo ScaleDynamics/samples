@@ -13,7 +13,7 @@ const threshold = 0.9
 
 // Load the model
 let modelLoaded = false
-toxicity.load(threshold).then(model => {
+toxicity.load(threshold).then((model) => {
   global.model = model
   modelLoaded = true
 })
