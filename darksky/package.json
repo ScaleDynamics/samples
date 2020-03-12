@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "build": "webpack --progress --mode=production",
     "deploy": "warp deploy --asset-dir=dist ."
   },
