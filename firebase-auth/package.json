@@ -1,0 +1,28 @@
+{
+  "name": "firebase-authentication",
+  "version": "1.0.0",
+  "description": "Use firebase authentication on browser and control rights as server side.",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "scripts": {
+    "dev": "webpack-dev-server --open",
+    "build": "webpack --progress --mode=production",
+    "deploy": "warp deploy --asset-dir=dist ."
+  },
+  "dependencies": {
+    "@warpjs/engine": "^1.1.4",
+    "@warpjs/warp": "^2.0.1",
+    "firebase": "^7.11.0",
+    "firebase-admin": "^8.9.2",
+    "mongodb": "^3.5.4"
+  },
+  "devDependencies": {
+    "@warpjs/webpack-plugin": "^1.1.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
