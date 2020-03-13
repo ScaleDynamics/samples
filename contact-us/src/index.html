@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact-us demo with WarpJS and Vue.js</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+</head>
+
+<body>
+  <img class="logo" src="logo.svg" alt="WarpJS" />
+  <h1>Contact-us demo with WarpJS and Vue.js</h1>
+  <div id="contact-form" class="contact-form">
+    <div v-if="isSending" class="loading">Sending...</div>
+    <form class="form" @submit="onSubmit">
+      <input required name="name" v-model='form.name' placeholder="Name" type="text" autocomplete="off" />
+      <input required name="email" v-model="form.email" placeholder="E-mail" type="email" autocomplete="off" />
+      <textarea required name="message" v-model="form.message" rows="4" placeholder="Message"></textarea>
+      <button class="button">Send</button>
+    </form>
+  </div>
+  <!-- import Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+</body>
+
+</html>
