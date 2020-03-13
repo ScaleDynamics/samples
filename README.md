@@ -19,6 +19,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 - [MongoDB Movies](./mongodb-movies) - Fetch a movie database with WarpJS and MongoDB driver for Node.js
 - [OpenCage Geocoder API](./opencage-geocoder) - Get the physical address from a GPS location with OpenCage Geocoder API
 - [TensorFlow.js Toxicity](./tensorflowjs-toxicity) - Execute the toxicity model for TensorFlow.js on WarpJS
+- [ViaMichelin API](./viamichelin) - Find the best restaurants near you from the ViaMichelin REST API
 
 ## License
 
