@@ -2,7 +2,8 @@
   "name": "stripe-node",
   "version": "1.0.0",
   "description": "Use Stripe Node.JS module with WarpJS",
-  "main": "server/index.js",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack --progress --mode=production",
