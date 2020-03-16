@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Twilio - Node.js API demo with WarpJS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+</head>
+
+<body>
+  <img class="logo" src="logo.svg" alt="WarpJS" />
+  <h1>📨 Twilio - Node.js API demo with WarpJS</h1>
+  <div class="twilio-form">
+    <div id="loading" style="display:none">Sending SMS...</div>
+    <form id="form" class="form">
+      <input id="phone" name="phone" value="" type="phone" placeholder="Phone number" required>
+      <textarea id="message" rows="4" required placeholder="Message"></textarea>
+      <button class="button">Send SMS</button>
+    </form>
+  </div>
+  <div id="result"></div>
+</body>
+
+</html>

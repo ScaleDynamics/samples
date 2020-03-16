@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.logo {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.twilio-form {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.twilio-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.twilio-form input[type='phone'],
+.twilio-form textarea {
+  border: solid 1px #e8e8e8;
+  border-radius: 3px;
+  padding: 10px 7px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.twilio-form textarea {
+  resize: none;
+}
+
+.twilio-form .button {
+  background: #0081fa;
+  border: solid 1px #0081fa;
+  color: white;
+  cursor: pointer;
+  padding: 10px 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.twilio-form .button:hover {
+  background: #61a8eb;
+  border: solid 1px #61a8eb;
+}
