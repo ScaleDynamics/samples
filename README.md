@@ -4,7 +4,7 @@ This repository contains a collection of samples using [WarpJS](https://warpjs.c
 
 ## What is WarpJS?
 
-WarpJS is a function-as-a-service platform providing a unique backend/frontend integration feature: no backend project, you declare your backend functions in the frontend project.
+WarpJS is a Function-as-a-Service (FaaS) platform with a unique serverless approach to code and deploy JavaScript applications in minutes.
 
 ## Prerequisites
 
