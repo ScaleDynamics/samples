@@ -1,5 +1,5 @@
 node_modules/
 .warp/
-dist/
+dist/client.js
 
 .DS_Store

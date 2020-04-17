@@ -1,6 +1,6 @@
 # Sample - Hello World
 
-Hello World sample project with [WarpJS](https://warpjs.com) from the [Getting Started](https://warpjs.dev/docs/getting-started).
+Hello World sample project with [WarpJS](https://warpjs.com).
 
 ## Setup
 

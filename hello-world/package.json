@@ -4,22 +4,16 @@
   "description": "Getting started with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open",
-    "build": "webpack --progress --mode=production",
-    "deploy": "warp deploy --asset-dir=dist ."
+    "build": "warp build --output umd:dist/client.js .",
+    "deploy": "warp deploy --asset-dir dist/ .",
+    "dev": "npx npm-run-all -p dev:server dev:client",
+    "dev:server": "warp start-emulator --output umd:dist/client.js --watch .",
+    "dev:client": "npx http-server -a 127.0.0.1 -c-1 dist/"
   },
-  "dependencies": {
-    "@warpjs/engine": "^1.1.4",
-    "@warpjs/warp": "^2.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@warpjs/webpack-plugin": "^1.1.4",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "warp": "^3.0.0"
   }
 }

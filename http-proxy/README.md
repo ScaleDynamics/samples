@@ -1,6 +1,6 @@
 # Sample - HTTP Proxy
 
-A simple HTTP proxy with [WarpJS](https://warpjs.com).
+A simple HTTP proxy with [WarpJS](https://warpjs.com) from the [Getting Started](https://warpjs.dev/docs/getting-started).
 
 ## Setup
 
