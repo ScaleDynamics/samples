@@ -1,0 +1,12 @@
+{
+  "name": "fb-movies-server",
+  "version": "1.0.0",
+  "description": "Demonstrate how to secure serverless function with Facebook connect and WarpJS.",
+  "main": "./src/index.js",
+  "author": "ScaleDynamics SAS",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^3.5.5",
+    "node-fetch": "^2.6.0"
+  }
+}
