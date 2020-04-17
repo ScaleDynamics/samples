@@ -1,0 +1,21 @@
+{
+  "name": "mongodb-movies",
+  "version": "1.0.0",
+  "description": "MongoDB Movies WarpJS sample",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "warp build --output umd:dist/client.js .",
+    "deploy": "warp deploy --asset-dir dist/ .",
+    "dev": "npx npm-run-all -p dev:server dev:client",
+    "dev:server": "warp start-emulator --output umd:dist/client.js --watch .",
+    "dev:client": "npx http-server -a 127.0.0.1 -c-1 dist/"
+  },
+  "dependencies": {
+    "mongodb": "^3.5.4"
+  },
+  "devDependencies": {
+    "warp": "^3.0.0"
+  }
+}
