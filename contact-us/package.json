@@ -1,0 +1,22 @@
+{
+  "name": "contact-us-form",
+  "version": "1.0.0",
+  "description": "Create a simple contact-us form in Vue.js and send e-mail with Node.js thanks to WarpJS.",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "warp build --output umd:dist/client.js .",
+    "deploy": "warp deploy --asset-dir dist/ .",
+    "dev": "npx npm-run-all -p dev:server dev:client",
+    "dev:server": "warp start-emulator --output umd:dist/client.js --watch .",
+    "dev:client": "npx http-server -a 127.0.0.1 -c-1 dist/"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "nodemailer": "^6.4.6"
+  },
+  "devDependencies": {
+    "warp": "^3.0.0"
+  }
+}
