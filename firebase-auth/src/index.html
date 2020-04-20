@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Secure server functions with Firebase and WarpJS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
+
+  <body>
+    <img class="logo" src="logo.svg" alt="WarpJS" />
+    <h1>Secure server functions with Firebase and WarpJS</h1>
+
+    <div id="error" style="display: none;">
+      <p class="error">Sorry you have to be logged in to see movies!</p>
+    </div>
+
+    <div id="login-form" class="form" style="display: none;">
+      <button id="signin" class="button">Sign in with Google</button>
+    </div>
+    <div id="logout-form" class="form" style="display: none;">
+      <button id="signout" class="button">Sign out</button>
+    </div>
+
+    <p id="result"></p>
+  </body>
+</html>
