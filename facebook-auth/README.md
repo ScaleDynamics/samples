@@ -61,9 +61,9 @@ After deploying, you have to add your domain to secure your application.
 
 ## How it works
 
-First, we implement a WarpJS serverless project in `project` directory.
+First, we implement a WarpJS serverless project in `server` directory.
 
-The `warp.config.js` defines the output for front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
+The `./server/warp.config.js` defines the output for front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
 
 ```js
 // warp.config.js
@@ -71,7 +71,7 @@ module.exports = {
   project: 'facebook-authentication',
   output: {
     format: 'node-module',
-    projectPath: '../',
+    projectPath: '.',
     name: 'warp-server',
   },
 }
@@ -87,7 +87,7 @@ So after that, it's very simple to call the serverless function:
 import '@warpjs/engine'
 ```
 
-- Import and call generated function as a npm library thanks to redux-saga (`./src/sagas/users.js`):
+- Import and call generated function as a npm library (`./src/index.js`):
 
 ```js
 import { getMovies } from 'warp-server'

@@ -33,9 +33,9 @@ $ npm run deploy
 
 ## How it works
 
-First, we implement a WarpJS serverless project in `project` directory.
+First, we implement a WarpJS serverless project in `server` directory.
 
-The `warp.config.js` defines the output for React front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
+The `./server/warp.config.js` defines the output for React front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
 
 ```js
 // warp.config.js

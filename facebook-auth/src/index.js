@@ -5,7 +5,7 @@
 
 'use strict'
 
-// import WarpJS engin and generated client library in node_modules
+// import WarpJS engine and generated client library in node_modules
 import '@warpjs/engine'
 import { getMovies } from 'warp-server'
 
