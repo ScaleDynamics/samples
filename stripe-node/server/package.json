@@ -1,0 +1,11 @@
+{
+  "name": "stripe-node-server",
+  "version": "1.0.0",
+  "description": "Use Stripe Node.js with WarpJS server",
+  "main": "index.js",
+  "author": "ScaleDynamics SAS",
+  "license": "MIT",
+  "dependencies": {
+    "stripe": "^8.32.0"
+  }
+}
