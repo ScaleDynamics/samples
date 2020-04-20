@@ -12,6 +12,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 
 ## Samples
 
+- [Dark Sky API](./darksky) - Get the weather from the Dark Sky REST API
 - [Facebook Authentication](./facebook-auth) - Secure server function with Facebook Login SDK and WarpJS
 - [Firebase Authentication](./firebase-auth) - Secure server function with Firebase and WarpJS
 - [HTTP Proxy](./http-proxy) - A simple HTTP Proxy with Axios. Project from the [Getting Started](https://warpjs.dev/docs/getting-started)

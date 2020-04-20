@@ -1,0 +1,25 @@
+{
+  "name": "darksky",
+  "version": "1.0.0",
+  "description": "WarpJS REST API sample - Dark Sky",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:client": "parcel build src/index.html",
+    "build:server": "warp build ./server",
+    "deploy": "warp deploy --asset-dir dist/ ./server",
+    "dev": "run-p dev:*",
+    "dev:client": "parcel src/index.html --open",
+    "dev:server": "warp start-emulator --watch ./server",
+    "postinstall": "cd server && npm install"
+  },
+  "dependencies": {
+    "@warpjs/engine": "^3.0.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "warp": "^3.0.0"
+  }
+}
