@@ -43,7 +43,7 @@ module.exports = {
   project: 'react-redux-saga',
   output: {
     format: 'node-module',
-    projectPath: '.',
+    projectPath: '..',
     name: 'warp-server',
   },
 }

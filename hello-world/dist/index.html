@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Getting started with WarpJS</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Getting started with WarpJS</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
-</head>
-
-<body>
-  <img class="logo" src="logo.svg" alt="WarpJS" />
-  <h1>Getting Started</h1>
-  <p id="result">⚙️ Loading data...</p>
-  <script src="https://cdn.warpjs.com/warp-engine/3.0.0/engine-prod.js"></script>
-  <script src="client.js"></script>
-  <script>
-    const { hello } = window["hello-world-client"];
-    // call warp function
-    hello("World").then((data) => {
-      document.getElementById("result").innerHTML = data;
-    });
-  </script>
-</body>
-
+  <body>
+    <img class="logo" src="logo.svg" alt="WarpJS" />
+    <h1>Getting Started</h1>
+    <p id="result">⚙️ Loading data...</p>
+    <script src="https://cdn.warpjs.com/warp-engine/3.0.2/engine-prod.js"></script>
+    <script src="client.js"></script>
+    <script>
+      const { hello } = window['hello-world-client']
+      // call warp function
+      hello('World').then((data) => {
+        document.getElementById('result').innerHTML = data
+      })
+    </script>
+  </body>
 </html>

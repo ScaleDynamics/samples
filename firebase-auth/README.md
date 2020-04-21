@@ -79,7 +79,7 @@ module.exports = {
   project: 'firebase-authentication',
   output: {
     format: 'node-module',
-    projectPath: '.',
+    projectPath: '..',
     name: 'warp-server',
   },
 }

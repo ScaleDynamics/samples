@@ -1,8 +1,8 @@
 module.exports = {
-  project: "firebase-authentication",
+  project: 'firebase-authentication',
   output: {
-    format: "node-module",
-    projectPath: ".",
-    name: 'warp-server'
+    format: 'node-module',
+    projectPath: '..',
+    name: 'warp-server',
   },
-};
+}

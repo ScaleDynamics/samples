@@ -1,8 +1,8 @@
 module.exports = {
-  project: "facebook-authentication",
+  project: 'facebook-authentication',
   output: {
-    format: "node-module",
-    projectPath: ".",
-    name: 'warp-server'
+    format: 'node-module',
+    projectPath: '..',
+    name: 'warp-server',
   },
-};
+}

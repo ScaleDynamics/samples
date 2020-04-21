@@ -71,7 +71,7 @@ module.exports = {
   project: 'facebook-authentication',
   output: {
     format: 'node-module',
-    projectPath: '.',
+    projectPath: '..',
     name: 'warp-server',
   },
 }

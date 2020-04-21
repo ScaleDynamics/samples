@@ -1,8 +1,8 @@
 module.exports = {
-  project: "react-redux-saga",
+  project: 'react-redux-saga',
   output: {
-    format: "node-module",
-    projectPath: ".",
-    name: 'warp-server'
+    format: 'node-module',
+    projectPath: '..',
+    name: 'warp-server',
   },
-};
+}
