@@ -16,6 +16,6 @@
     "axios": "^0.19.2"
   },
   "devDependencies": {
-    "warp": "^3.0.2"
+    "warp": "3.0.2"
   }
 }
