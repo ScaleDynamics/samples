@@ -1,0 +1,10 @@
+{
+  "name": "opencage-geocoder-server",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "ScaleDynamics SAS",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
