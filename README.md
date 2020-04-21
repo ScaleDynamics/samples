@@ -24,9 +24,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 - [Stripe Node.JS](./stripe-node) - Make a paiement with Stripe Node.JS module and WarpJS.
 - [TensorFlow.js Toxicity](./tensorflowjs-toxicity) - Execute the toxicity model for TensorFlow.js on WarpJS
 - [Twilio SMS](./twilio-sms) - Send SMS with Twilio and WarpJS.
-<!--
 - [ViaMichelin API](./viamichelin) - Find the best restaurants near you from the ViaMichelin REST API
-  -->
 
 ## License
 
