@@ -21,6 +21,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 - [HTTP Proxy](./http-proxy) - A simple HTTP Proxy with Axios. Project from the [Getting Started](https://warpjs.dev/docs/getting-started)
 - [MongoDB Movies](./mongodb-movies) - Fetch a movie database with WarpJS and MongoDB driver for Node.js
 - [OpenCage Geocoder API](./opencage-geocoder) - Get the physical address from a GPS location with OpenCage Geocoder API
+- [React](./react) - Integration of WarpJS with React on an [`create-react-app`](https://github.com/facebook/create-react-app) project.
 - [React Redux Saga](./react-redux-saga) - Integration of WarpJS with React, Redux and Redux Saga.
 - [Stripe Node.JS](./stripe-node) - Make a paiement with Stripe Node.JS module and WarpJS.
 - [TensorFlow.js Toxicity](./tensorflowjs-toxicity) - Execute the toxicity model for TensorFlow.js on WarpJS
