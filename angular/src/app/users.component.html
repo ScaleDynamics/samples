@@ -1,0 +1,16 @@
+<div class="users">
+  <div *ngIf="users && users.length">
+    <ul>
+      <li *ngFor="let item of users;">
+        <img src="{{ item.photo }}" />
+        <h3>{{ item.name }}</h3>
+        <p>✉️ {{ item.email }}</p>
+        <p>📞 {{ item.phone }}</p>
+        <p>🏢 {{ item.work }}</p>
+        <p>🏠 {{ item.city }}</p>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!users" class='message'>loading...</div>
+</div>
+

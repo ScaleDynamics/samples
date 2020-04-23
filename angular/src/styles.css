@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-bottom: 100px;
+  margin-top: 8px;
+}
+
+.logo {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+}

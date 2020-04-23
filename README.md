@@ -12,6 +12,7 @@ To learn how to get started with WarpJS, follow our [Getting Started](https://wa
 
 ## Samples
 
+- [Angular](./angular) - Integration of WarpJS with Angular on an [`angular-cli`](https://angular.io/cli) project.
 - [Contact-us form with Vue.js](./contact-us) - Create a simple contact-us form in Vue.js and send e-mail with Node.js thanks to WarpJS.
 - [Dark Sky API](./darksky) - Get the weather from the Dark Sky REST API
 - [Facebook Authentication](./facebook-auth) - Secure server function with Facebook Login SDK and WarpJS
