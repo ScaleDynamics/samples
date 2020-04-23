@@ -1,7 +1,7 @@
 {
   "name": "stripe-node",
   "version": "1.0.0",
-  "description": "Use Stripe Node.JS module with WarpJS",
+  "description": "Use Stripe Node.js module with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "scripts": {

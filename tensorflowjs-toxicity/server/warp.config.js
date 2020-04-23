@@ -1,8 +1,8 @@
 module.exports = {
-  project: 'tensorflowjs_toxicity',
+  project: 'tensorflow_toxicity',
   output: {
     format: 'node-module',
     projectPath: '..',
-    name: 'warp-server'
+    name: 'warp-server',
   },
-};
+}

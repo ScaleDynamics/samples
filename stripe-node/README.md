@@ -1,6 +1,6 @@
 # Demo Stripe
 
-Make a paiement with [Stripe](https://stripe.com) Node.JS module and [WarpJS](https://warpjs.com).
+Make a payment with [Stripe](https://stripe.com) Node.js module and [WarpJS](https://warpjs.com).
 
 ## Setup
 
@@ -43,6 +43,6 @@ $ npm run deploy
 
 ## Resources
 
-- [Stripe Node.JS](https://www.npmjs.com/package/stripe)
+- [Stripe Node.js](https://www.npmjs.com/package/stripe)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)

@@ -14,7 +14,7 @@ const result = document.getElementById('result')
 // on load
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
-    // succes
+    // success
     function (pos) {
       result.innerHTML = '<h2>⚙️ Calling API...</h2>'
       getPosition(pos.coords.latitude, pos.coords.longitude).then((position) => {
