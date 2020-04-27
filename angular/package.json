@@ -7,7 +7,7 @@
     "start:client": "ng serve",
     "start:server": "warp start-emulator -w ./server",
     "start": "run-p start:*",
-    "build:client": "ng build",
+    "build:client": "ng build --prod",
     "build:server": "warp build ./server",
     "build": "run-s build:server build:client",
     "deploy": "warp deploy --asset-dir dist/angular ./server",
