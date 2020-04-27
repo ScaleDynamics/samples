@@ -1,7 +1,7 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "Getting started with WarpJS",
+  "description": "Hello World with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "main": "src/index.js",
