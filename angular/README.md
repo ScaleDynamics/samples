@@ -9,6 +9,8 @@ $ npm install -g @angular/cli
 $ ng new angular
 ```
 
+👉 Try a [live demo](https://warpjs-b45bk2bxad26645dbbmfd33ih.storage.googleapis.com/index.html)
+
 ## Setup
 
 - Clone the project

@@ -6,6 +6,8 @@ This sample shows you how to integrate WarpJS in a React project generated with 
 $ npx create-react-app my-app
 ```
 
+👉 Try a [live demo](https://warpjs-0bvhul2n4rn58ukel5q6jvmr1.storage.googleapis.com/index.html)
+
 ## Setup
 
 - Clone the project

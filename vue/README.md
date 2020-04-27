@@ -7,6 +7,8 @@ $ npm install -g @vue/cli @vue/cli-service-global
 $ vue create vue
 ```
 
+👉 Try a [live demo](https://warpjs-3u5wpzjmak37vkg9b4cswx6bj.storage.googleapis.com/index.html)
+
 ## Setup
 
 - Clone the project
