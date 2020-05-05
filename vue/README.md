@@ -36,7 +36,7 @@ $ npm run deploy
 
 ## Resources
 
+- [Vue CLI](https://cli.vuejs.org/)
+- [Axios](https://github.com/axios/axios)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)
-- [Axios library](https://github.com/axios/axios)
-- [Vue CLI](https://cli.vuejs.org/)

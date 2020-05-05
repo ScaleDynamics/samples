@@ -42,6 +42,6 @@ $ npm run deploy
 ## Resources
 
 - [Dark Sky API](https://darksky.net/dev)
-- [Axios library](https://github.com/axios/axios)
+- [Axios](https://github.com/axios/axios)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)

@@ -59,47 +59,11 @@ After deploying, you have to add your domain to secure your application.
 
 3. Add Your WarpJS url (warpjs-???.storage.googleapis.com) in `Valid OAuth Redirect URIs` field.
 
-## How it works
-
-First, we implement a WarpJS serverless project in `server` directory.
-
-The `./server/warp.config.js` defines the output for front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
-
-```js
-// warp.config.js
-module.exports = {
-  project: 'facebook-authentication',
-  output: {
-    format: 'node-module',
-    projectPath: '..',
-    name: 'warp-server',
-  },
-}
-```
-
-The [`warp build`](https://warpjs.dev/docs/api/cli#build) command generates the JavaScript client library directly in the `node_modules` directory of front-end project. WarpJS find the entry point server thanks `package.json`.main attribute.
-
-So after that, it's very simple to call the serverless function:
-
-- Import [`@warpjs/engine`](https://warpjs.dev/docs/api/engine) in the entry point of React (`./src/index.js`)
-
-```js
-import '@warpjs/engine'
-```
-
-- Import and call generated function as a npm library (`./src/index.js`):
-
-```js
-import { getMovies } from 'warp-server'
-...
-const data = await getMovies(accessToken)
-```
-
 ## Resources
 
 - [Facebook Developers](https://developers.facebook.com/)
-- [Node Fetch](https://www.npmjs.com/package/node-fetch)
+- [node-fetch](https://www.npmjs.com/package/node-fetch)
 - [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb)
 - [Sample Mflix Dataset from MongoDB Atlas](https://docs.atlas.mongodb.com/sample-data/sample-mflix/)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev/)
+- [WarpJS Documentation](https://warpjs.dev)

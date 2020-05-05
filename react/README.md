@@ -35,7 +35,7 @@ $ yarn deploy
 
 ## Resources
 
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Axios](https://github.com/axios/axios)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)
-- [Axios library](https://github.com/axios/axios)
-- [Create React App](https://github.com/facebook/create-react-app)

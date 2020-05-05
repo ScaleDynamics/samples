@@ -45,7 +45,7 @@ $ npm run deploy
 
 ## Resources
 
-- [Twilio Docs](https://www.twilio.com/docs/api)
-- [Twilio npm](https://www.npmjs.com/package/twilio)
+- [Twilio Documentation](https://www.twilio.com/docs/api)
+- [Twilio npm module](https://www.npmjs.com/package/twilio)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev/)
+- [WarpJS Documentation](https://warpjs.dev)

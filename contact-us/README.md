@@ -54,4 +54,4 @@ $ npm run deploy
 - [Nodemailer](https://www.npmjs.com/package/nodemailer)
 - [Joi](https://www.npmjs.com/package/@hapi/joi)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev/)
+- [WarpJS Documentation](https://warpjs.dev)

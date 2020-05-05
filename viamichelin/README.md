@@ -40,6 +40,6 @@ $ npm run deploy
 ## Resources
 
 - [ViaMichelin API](https://api.viamichelin.com/)
-- [Axios library](https://github.com/axios/axios)
+- [Axios](https://github.com/axios/axios)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)

@@ -58,50 +58,14 @@ $ npm run build
 $ npm run deploy
 ```
 
-After deploying, you have to add your domain to secure your application.
+After deploying, you have to add your domain to secure your application:
 
-- Go to firebase console
-- in `Authentication` menu, select `Sign-in method` tab and enabled Google sign-in provider.
-- Click on add domain button and add your WarpJS domain `warpjs-???.storage.googleapis.com`
+- Go to your [Firebase Console](https://console.firebase.google.com/) and select your project
+- In `Authentication` menu, select `Sign-in method` tab and enable the `Google Sign-In` provider
+- Click on `Add domain` button and add your WarpJS domain `warpjs-???.storage.googleapis.com`
 
-You can find your domain in terminal after to execute `npm run deploy` or go to
-[Starbase console](starbase.warpjs.com) and copy Deployment URL on your project.
-
-## How it works
-
-First, we implement a WarpJS serverless project in `server` directory.
-
-The `./server/warp.config.js` defines the output for front-end like a npm module thanks to format [`node-module`](https://warpjs.dev/docs/api/warp-config#output).
-
-```js
-// warp.config.js
-module.exports = {
-  project: 'firebase-authentication',
-  output: {
-    format: 'node-module',
-    projectPath: '..',
-    name: 'warp-server',
-  },
-}
-```
-
-The [`warp build`](https://warpjs.dev/docs/api/cli#build) command generates the JavaScript client library directly in the `node_modules` directory of front-end project. WarpJS find the entry point server thanks `package.json`.main attribute.
-
-So after that, it's very simple to call the serverless function:
-
-- Import [`@warpjs/engine`](https://warpjs.dev/docs/api/engine) in the entry point of React (`./src/index.js`)
-
-```js
-import '@warpjs/engine'
-```
-
-- Import and call generated function as a npm library (`./src/index.js`):
-
-```js
-import { getMovies } from 'warp-server'
-...
-const movies = await getMovies(idToken)
-```
+You can find your domain in terminal after to execute `npm run deploy`, or go to your
+[WarpJS Console](https://starbase.warpjs.com) and copy deployment URL of your project.
 
 ## Resources
 
@@ -110,4 +74,4 @@ const movies = await getMovies(idToken)
 - [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb)
 - [Sample Mflix Dataset from MongoDB Atlas](https://docs.atlas.mongodb.com/sample-data/sample-mflix/)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev/)
+- [WarpJS Documentation](https://warpjs.dev)

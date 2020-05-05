@@ -38,7 +38,7 @@ $ npm run deploy
 
 ## Resources
 
+- [Angular CLI](https://angular.io/cli)
+- [Axios](https://github.com/axios/axios)
 - [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
 - [WarpJS Documentation](https://warpjs.dev)
-- [Axios library](https://github.com/axios/axios)
-- [Angular CLI](https://angular.io/cli)
