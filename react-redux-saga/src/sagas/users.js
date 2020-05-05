@@ -5,7 +5,10 @@
 
 import { takeLatest, call, put } from 'redux-saga/effects'
 import { USERS_FETCH_REQUEST, USERS_FETCH_SUCCESS, USERS_FETCH_ERROR } from '../actions/'
-import { fetchUsers } from 'warp-server'
+
+// init WarpJS
+import WarpServer from 'warp-server'
+const { fetchUsers } = new WarpServer()
 
 export default function* watchUsers() {
   yield takeLatest(USERS_FETCH_REQUEST, workerSaga)

@@ -5,9 +5,10 @@
 
 'use strict'
 
-// import WarpJS engine and generated client library in node_modules
+// init WarpJS
 import '@warpjs/engine'
-import { getMovies } from 'warp-server'
+import WarpServer from 'warp-server'
+const { getMovies } = new WarpServer()
 
 const loginNode = document.getElementById('login-form')
 const logoutNode = document.getElementById('logout-form')
@@ -49,7 +50,7 @@ async function displayMovies() {
     loginNode.style.display = 'none'
     errorNode.style.display = 'none'
     result.innerHTML = '⚙️ loading...'
-    // warp call
+    // call warp function
     const data = await getMovies(accessToken)
     const movies = data.movies
     const user = data.user

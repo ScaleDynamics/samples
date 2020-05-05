@@ -5,8 +5,10 @@
 
 'use strict'
 
+// init WarpJS
 import '@warpjs/engine'
-import { classify } from 'warp-server'
+import WarpServer from 'warp-server'
+const { classify } = new WarpServer()
 
 // on submit form
 document.getElementById('form').addEventListener('submit', async (event) => {
@@ -14,7 +16,7 @@ document.getElementById('form').addEventListener('submit', async (event) => {
   result.innerHTML = '<h2>Remote inference running</h2>'
   const text = classifyNewTextInput.value
 
-  // warp call
+  // call warp function
   const toxic = await classify([text])
 
   // render result

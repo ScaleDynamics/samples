@@ -4,8 +4,10 @@
  */
 'use strict'
 
+// init WarpJS
 import '@warpjs/engine'
-import { chargeService } from 'warp-server'
+import WarpServer from 'warp-server'
+const { chargeService } = new WarpServer()
 
 // dynamic form
 const div = document.getElementById('result')
@@ -19,8 +21,8 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
 const charge = function (email, amount, currency) {
   div.innerHTML = '<p>⚙️ loading...</p>'
-  // Call function in Warp
+  // call warp function
   chargeService(email, amount, currency)
-    .then(receiptUrl => div.innerHTML = `<p>🧾 <a href="${receiptUrl}" target="_blank">See the receipt</a></p>`)
-    .catch(e => div.innerHTML = `<div class="error">${e.message}</div>`)
+    .then((receiptUrl) => (div.innerHTML = `<p>🧾 <a href="${receiptUrl}" target="_blank">See the receipt</a></p>`))
+    .catch((e) => (div.innerHTML = `<div class="error">${e.message}</div>`))
 }

@@ -16,10 +16,11 @@
       <button>search</button>
     </form>
     <p id="result"></p>
-    <script src="https://cdn.warpjs.com/warp-engine/3.0.5/engine-prod.js"></script>
+    <script src="https://cdn.warpjs.com/warp-engine/3.0.6/engine-web-prod.js"></script>
     <script src="client.js"></script>
     <script>
-      const { fetchMovies } = window['mongodb-movies-client']
+      const Warp = window['mongodb-movies-client']
+      const { fetchMovies } = new Warp()
       // on submit form
       document.getElementById('form').addEventListener('submit', async (event) => {
         event.preventDefault()
@@ -29,7 +30,7 @@
 
         result.innerHTML = '⚙️ searching...'
 
-        // warp call
+        // call warp function
         const movies = await fetchMovies(search.value)
 
         // render result

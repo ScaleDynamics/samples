@@ -4,10 +4,12 @@
  */
 
 import React from 'react'
-import { getUsers } from 'warp-server'
+
+// init WarpJS
+import WarpServer from 'warp-server'
+const { getUsers } = new WarpServer()
 
 class Users extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {
@@ -16,7 +18,7 @@ class Users extends React.Component {
   }
 
   componentDidMount() {
-    getUsers().then(data => {
+    getUsers().then((data) => {
       this.setState({ users: data })
     })
   }
@@ -25,11 +27,11 @@ class Users extends React.Component {
     const { users } = this.state
 
     return (
-      <div className='users'>
+      <div className="users">
         {users ? (
           <div>
             <ul>
-              {users.map((item, i) =>
+              {users.map((item, i) => (
                 <li key={item.id}>
                   <img src={item.photo} alt={'photo: ' + item.name} />
                   <h3>{item.name}</h3>
@@ -38,16 +40,15 @@ class Users extends React.Component {
                   <p><span role="img" aria-label="work">🏢</span> {item.work}</p>
                   <p><span role="img" aria-label="city">🏠</span> {item.city}</p>
                 </li>
-              )}
+              ))}
             </ul>
           </div>
         ) : (
-            <div className='message'>loading...</div>
-          )
-        }
+          <div className="message">loading...</div>
+        )}
       </div>
     )
   }
 }
 
-export default Users;
+export default Users

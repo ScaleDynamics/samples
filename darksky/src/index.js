@@ -5,9 +5,10 @@
 
 'use strict'
 
-// import WarpJS
+// init WarpJS
 import '@warpjs/engine'
-import { getForecast } from 'warp-server'
+import WarpServer from 'warp-server'
+const { getForecast } = new WarpServer()
 
 const result = document.getElementById('result')
 

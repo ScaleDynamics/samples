@@ -5,8 +5,10 @@
 
 'use strict'
 
+// init WarpJS
 import '@warpjs/engine'
-import { getRestaurants } from 'warp-server'
+import WarpServer from 'warp-server'
+const { getRestaurants } = new WarpServer()
 
 // on load
 if (navigator.geolocation) {
@@ -32,8 +34,8 @@ if (navigator.geolocation) {
                 </thead>
                 <tbody>
                   ${list
-            .map(
-              (item) => `
+                    .map(
+                      (item) => `
                         <tr>
                           <td><a href="https://${item.web}" target="_blank">${item.name}</a></td>
                           <td>${item.description}</td>
@@ -44,8 +46,8 @@ if (navigator.geolocation) {
                           <td>${item.rating} / 20</td>
                         </tr>
                       `
-            )
-            .join('')}
+                    )
+                    .join('')}
                 </tbody>
               </table>
             </div>`

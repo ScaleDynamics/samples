@@ -5,25 +5,23 @@
 
 'use strict'
 
+// init WarpJS
 import '@warpjs/engine'
+import WarpServer from 'warp-server'
+const { getMovies } = new WarpServer()
 
-// import firebase
+// init Firebase
 import firebase from 'firebase/app'
 import 'firebase/auth'
-
-import { getMovies } from 'warp-server'
-
 // Your web app's Firebase configuration
 // const firebaseConfig = 'YOUR FIREBASE CONFIG HERE'
-
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig)
 
 const loginNode = document.getElementById('login-form')
 const logoutNode = document.getElementById('logout-form')
 const errorNode = document.getElementById('error')
 
-// listen firebase to see if user is logged
+// listen Firebase to see if user is logged
 let idToken = null
 let firebaseUser = null
 firebase.auth().onAuthStateChanged(async (user) => {
@@ -58,25 +56,24 @@ async function displayMovies() {
     loginNode.style.display = 'none'
     errorNode.style.display = 'none'
     result.innerHTML = '⚙️ loading...'
-    // warp call
+    // call warp function
     const movies = await getMovies(idToken)
-    console.log(movies);
     // render result
     if (movies && movies.length) {
       result.innerHTML = `
         <h2>Hi ${firebaseUser.displayName}!</h2>
         <ul>
           ${movies
-          .map(
-            (movie) => `
+            .map(
+              (movie) => `
             <li>
               <h3>${movie.title} (${movie.year})</h3>
               <img src="${movie.poster}" width="100"/>
               <p>${movie.plot}</p>
             </li>
           `
-          )
-          .join('')}
+            )
+            .join('')}
         </ul>`
     }
   } catch (e) {

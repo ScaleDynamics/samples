@@ -5,8 +5,10 @@
 
 'use strict'
 
+// init WarpJS
 import '@warpjs/engine'
-import { sendSms } from 'warp-server'
+import WarpServer from 'warp-server'
+const { sendSms } = new WarpServer()
 
 const form = document.getElementById('form')
 const phone = document.getElementById('phone')
@@ -14,7 +16,7 @@ const message = document.getElementById('message')
 const loading = document.getElementById('loading')
 
 // on submit form
-form.addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault()
 
   loading.style.display = ''

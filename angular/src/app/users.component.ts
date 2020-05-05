@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core'
-import { getUsers } from 'warp-server'
+
+// init WarpJS
+import WarpServer from 'warp-server'
+const { getUsers } = new WarpServer()
 
 @Component({
   selector: 'app-root',

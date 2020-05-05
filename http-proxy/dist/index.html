@@ -12,10 +12,11 @@
     <img class="logo" src="logo.svg" alt="WarpJS" />
     <h1>HTTP proxy with WarpJS</h1>
     <p id="result">⚙️ Loading data...</p>
-    <script src="https://cdn.warpjs.com/warp-engine/3.0.5/engine-prod.js"></script>
+    <script src="https://cdn.warpjs.com/warp-engine/3.0.6/engine-web-prod.js"></script>
     <script src="client.js"></script>
     <script>
-      const { fetchData } = window['http-proxy-client']
+      const Warp = window['http-proxy-client']
+      const { fetchData } = new Warp()
       // call warp function
       fetchData().then((data) => {
         document.getElementById('result').innerHTML = data.map((user) => `${user.id} - ${user.name}`).join('<br>')
