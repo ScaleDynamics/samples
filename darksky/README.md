@@ -1,10 +1,10 @@
 # Rest API sample - Dark Sky
 
-This sample shows how to use a [Weather Dark Sky REST API](https://darksky.net/dev) using [WarpJS](https://warpjs.com), in particular we are loading weather forecast at a specific location. Feel free to use it as a snippet in your own code.
+This sample shows how to use a [Weather Dark Sky REST API](https://darksky.net/dev) using [ScaleDynamics WarpJS SDK](https://scaledynamics.com/), in particular we are loading weather forecast at a specific location.
 
 For more info about the API, refer to https://darksky.net/dev/docs
 
-👉 Try a [live demo](https://warpjs-4iak0pdr14h47qccekgmhybjj.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-darksky.scaledynamics.cloud)
 
 ## Setup
 
@@ -18,7 +18,7 @@ For more info about the API, refer to https://darksky.net/dev/docs
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -42,6 +42,4 @@ $ npm run deploy
 ## Resources
 
 - [Dark Sky API](https://darksky.net/dev)
-- [Axios](https://github.com/axios/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

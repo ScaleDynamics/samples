@@ -1,28 +1,27 @@
 {
-  "name": "facebook-authentication",
+  "name": "facebook-auth",
   "version": "1.0.0",
-  "description": "Use Facebook authentication SDK on browser side and control rights as server side.",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "scripts": {
-    "postinstall": "cd server && npm install",
+    "postinstall": "cd server/ && npm install",
     "dev": "run-p dev:*",
-    "dev:server": "warp start-emulator --watch ./server",
+    "dev:server": "warp dev server/",
     "dev:client": "webpack-dev-server --open",
     "build": "run-s build:server build:client",
-    "build:server": "warp build ./server",
+    "build:server": "warp build server/",
     "build:client": "webpack --progress --mode=production",
-    "deploy": "warp deploy --asset-dir dist/ ./server"
+    "deploy": "warp deploy . server/"
   },
   "dependencies": {
-    "@warpjs/engine": "3.0.10"
+    "@warpjs/engine": "4.0.4"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
     "npm-run-all": "^4.1.5",
-    "warp": "3.0.10",
+    "warp": "4.0.4",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"

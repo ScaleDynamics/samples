@@ -7,7 +7,7 @@ const axios = require('axios')
 
 const getRestaurants = async (latitude, longitude) => {
   // Go to https://api.viamichelin.com/ to get an API key
-  const VIAMICHELIN_API_KEY = 'VIAMICHELIN_API_KEY'
+  const VIAMICHELIN_API_KEY = 'YOUR_API_KEY'
 
   // Build restAPI call
   const coordinates = `${longitude}:${latitude}`
@@ -24,7 +24,7 @@ const getRestaurants = async (latitude, longitude) => {
 
   // fetch api
   const { data } = await axios.get(apiUrl, {
-    transformResponse: [(data) => jsonpHandler(data, 'cb')]
+    transformResponse: [(data) => jsonpHandler(data, 'cb')],
   })
 
   const response = data.poiList.map((poi) => {
@@ -37,7 +37,7 @@ const getRestaurants = async (latitude, longitude) => {
       bib_gourmand: data.bib_gourmand,
       rating: data.rating,
       img: data.medias[0].url_s,
-      web: data.web
+      web: data.web,
     }
   })
 

@@ -1,16 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.png'
+import './App.css'
 import Users from './Users'
 
 function App() {
   return (
     <div>
-      <img src={logo} className="logo" alt="logo" />
-      <h1>React sample with WarpJS</h1>
+      <header>
+        <img class="logo" src={logo} alt="ScaleDynamics" />
+      </header>
+      <h1>React sample</h1>
       <Users />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

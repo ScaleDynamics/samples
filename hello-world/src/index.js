@@ -2,7 +2,10 @@
  * Copyright 2020 ScaleDynamics SAS. All rights reserved.
  * Licensed under the MIT license.
  */
+'use strict';
 
-module.exports = {
-  hello: (name) => `Hello ${name} from Node.js ${process.version}`,
+function hello (name) {
+  return `Hello ${name} from Node.js ${process.version}`;
 };
+
+module.exports = { hello };

@@ -1,6 +1,6 @@
 # Rest API sample - ViaMichelin
 
-This sample shows how to use a [ViaMichelin REST API](https://api.viamichelin.com/services/api-rest/) using [WarpJS](https://warpjs.com). This API is for tailor-made journey calculations, with unique Michelin content services. In this sample we will use this API to indicate the best restaurants at 10 km of the current location. Feel free to use it as a snippet in your own code.
+This sample shows how to use a [ViaMichelin REST API](https://api.viamichelin.com/services/api-rest/) with the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/). This API is for tailor-made journey calculations, with unique Michelin content services. In this sample we will use this API to indicate the best restaurants at 10 km of the current location.
 
 For more info about the API, refer to https://api.viamichelin.com/
 
@@ -16,7 +16,7 @@ For more info about the API, refer to https://api.viamichelin.com/
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -24,7 +24,7 @@ $ npx warp login
 
 - Open a free account on https://api.viamichelin.com, and get your API key
 - Open the [`server/index.js`](server/index.js) file
-- Update the `VIAMICHELIN_API_KEY` value with yours
+- Update the `YOUR_API_KEY` value with yours
 
 ## Run
 
@@ -41,5 +41,4 @@ $ npm run deploy
 
 - [ViaMichelin API](https://api.viamichelin.com/)
 - [Axios](https://github.com/axios/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

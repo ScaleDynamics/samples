@@ -1,5 +1,6 @@
 node_modules/
 .warp/
-dist/client.js
+public/client.js
+public/client.d.ts
 
 .DS_Store

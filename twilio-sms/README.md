@@ -1,6 +1,8 @@
 # Sample - Twilio SMS
 
-Send SMS with [Twilio](https://www.twilio.com/) and [WarpJS](https://warpjs.com).
+Send an SMS with [Twilio](https://www.twilio.com/) and the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
+
+👉 Try a [live demo](https://sample-twilio-sms.scaledynamics.cloud/)
 
 ## Setup
 
@@ -14,7 +16,7 @@ Send SMS with [Twilio](https://www.twilio.com/) and [WarpJS](https://warpjs.com)
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -47,5 +49,4 @@ $ npm run deploy
 
 - [Twilio Documentation](https://www.twilio.com/docs/api)
 - [Twilio npm module](https://www.npmjs.com/package/twilio)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

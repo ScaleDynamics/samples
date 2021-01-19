@@ -1,12 +1,11 @@
 {
-  "name": "fb-movies-server",
+  "name": "facebook-auth-server",
   "version": "1.0.0",
-  "description": "Demonstrate how to secure serverless function with Facebook connect and WarpJS.",
-  "main": "./src/index.js",
+  "main": "src/index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "^3.5.5",
-    "node-fetch": "^2.6.0"
+    "mongodb": "^3.6.3",
+    "node-fetch": "^2.6.1"
   }
 }

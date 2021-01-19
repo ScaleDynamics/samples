@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fetch MongoDB with WarpJS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="logo.png" alt="ScaleDynamics" />
+    </header>
+    <h1>MongoDB - Fetch Movie Database with WarpJS</h1>
+    <form id="form">
+      <input id="search" value="Star Trek" placeholder="search a movie (by title)" required />
+      <button>search</button>
+    </form>
+    <p id="result"></p>
+    <script src="https://cdn.scaledynamics.com/warp-engine/4.0.4/engine-web-prod.js"></script>
+    <script src="client.js"></script>
+    <script>
+      const Warp = window['mongodb-movies-client']
+      const { fetchMovies } = new Warp()
+      // on submit form
+      document.getElementById('form').addEventListener('submit', async (event) => {
+        event.preventDefault()
+
+        const result = document.getElementById('result')
+        const search = document.getElementById('search')
+
+        result.innerHTML = '⚙️ searching...'
+
+        // call warp function
+        const movies = await fetchMovies(search.value)
+
+        // render result
+        if (movies && movies.length) {
+          result.innerHTML = `
+          <ul>
+            ${movies
+              .map(
+                (movie) => `
+              <li>
+                <h2>${movie.title} (${movie.year})</h2>
+                <img src="${movie.poster}" width="100"/>
+                <p>${movie.plot}</p>
+              </li>
+            `
+              )
+              .join('')}
+          </ul>`
+        } else {
+          result.innerHTML = `no results found for "${search.value}"`
+        }
+      })
+    </script>
+  </body>
+</html>

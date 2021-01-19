@@ -1,7 +1,6 @@
 {
-  "name": "ts-toxicity-server",
+  "name": "tensorflowjs-toxicity-server",
   "version": "1.0.0",
-  "description": "Use Tensorflow and Toxicity model on server.",
   "main": "index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",

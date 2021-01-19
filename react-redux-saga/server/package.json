@@ -1,11 +1,10 @@
 {
   "name": "warp-server",
   "version": "1.0.0",
-  "description": "HTTP Proxy to get user list with Axios",
   "main": "src/index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }

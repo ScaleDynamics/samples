@@ -1,5 +1,7 @@
 # Sample - Firebase authentication
 
+Use Firebase authentication SDK on browser and check the user rights on server side.
+
 Use Firebase authentication on browser and control rights as server side.
 
 Sample is based on [MongoDB Movies](../mongodb-movies)
@@ -18,7 +20,7 @@ Idea is to add Firebase Authentication on client side and check that user is con
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -62,10 +64,10 @@ After deploying, you have to add your domain to secure your application:
 
 - Go to your [Firebase Console](https://console.firebase.google.com/) and select your project
 - In `Authentication` menu, select `Sign-in method` tab and enable the `Google Sign-In` provider
-- Click on `Add domain` button and add your WarpJS domain `warpjs-???.storage.googleapis.com`
+- Click on `Add domain` button and add your domain URL (eg. xxxxxx.scaledynamics.cloud)
 
 You can find your domain in terminal after to execute `npm run deploy`, or go to your
-[WarpJS Console](https://starbase.warpjs.com) and copy deployment URL of your project.
+[ScaleDynamics Console](https://console.scaledynamics.com) and copy deployment URL of your project.
 
 ## Resources
 
@@ -73,5 +75,4 @@ You can find your domain in terminal after to execute `npm run deploy`, or go to
 - [Firebase Authentication](https://firebase.google.com/products/auth)
 - [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb)
 - [Sample Mflix Dataset from MongoDB Atlas](https://docs.atlas.mongodb.com/sample-data/sample-mflix/)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

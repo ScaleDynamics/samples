@@ -1,8 +1,7 @@
 module.exports = {
-  project: 'viamichelin',
   output: {
-    format: 'node-module',
+    format: 'umd',
     name: 'warp-server',
-    projectPath: '..',
+    filePath: '../src/client.js',
   },
 }

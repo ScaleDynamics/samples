@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTTP proxy with WarpJS</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="logo.png" alt="ScaleDynamics" />
+    </header>
+    <h1>HTTP proxy with WarpJS</h1>
+    <p id="result">⚙️ Loading data...</p>
+    <script src="https://cdn.scaledynamics.com/warp-engine/4.0.4/engine-web-prod.js"></script>
+    <script src="client.js"></script>
+    <script>
+      const Warp = window['http-proxy-client']
+      const { fetchData } = new Warp()
+      // call warp function
+      fetchData().then((data) => {
+        document.getElementById('result').innerHTML = data.map((user) => `${user.id} - ${user.name}`).join('<br>')
+      })
+    </script>
+  </body>
+</html>

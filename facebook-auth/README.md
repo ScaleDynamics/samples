@@ -1,8 +1,6 @@
 # Sample - Facebook authentication
 
-Use Facebook Login SDK on browser and control rights as server side.
-
-Idea is to add Facebook Login on client side and check that the user is connected as server side.
+Use Facebook Login SDK on browser and check the user rights on server side.
 
 ## Setup
 
@@ -16,7 +14,7 @@ Idea is to add Facebook Login on client side and check that the user is connecte
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -57,7 +55,7 @@ After deploying, you have to add your domain to secure your application.
 
 2. In Facebook Login tab, open settings
 
-3. Add Your WarpJS url (warpjs-???.storage.googleapis.com) in `Valid OAuth Redirect URIs` field.
+3. Add Your URL (eg. https://xxxxxx.scaledynamics.cloud) in the `Valid OAuth Redirect URIs` field.
 
 ## Resources
 
@@ -65,5 +63,4 @@ After deploying, you have to add your domain to secure your application.
 - [node-fetch](https://www.npmjs.com/package/node-fetch)
 - [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb)
 - [Sample Mflix Dataset from MongoDB Atlas](https://docs.atlas.mongodb.com/sample-data/sample-mflix/)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

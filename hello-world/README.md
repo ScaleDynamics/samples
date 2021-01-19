@@ -1,20 +1,20 @@
 # Sample - Hello World
 
-Hello World sample project with [WarpJS](https://warpjs.com).
+Hello World sample project with [ScaleDynamics](https://scaledynamics.com/).
 
-👉 Try a [live demo](https://warpjs-1654j9yg6fa921nrp277e3r42.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-hello-world.scaledynamics.cloud)
 
 ## Setup
 
 - Clone the project
-- Go to the `warp-samples/hello-world` directory
+- Go to the `samples/hello-world` directory
 - Run the following commands:
 
 ```bash
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -31,5 +31,4 @@ $ npm run deploy
 
 ## Resources
 
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

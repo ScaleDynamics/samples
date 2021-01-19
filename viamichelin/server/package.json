@@ -1,11 +1,10 @@
 {
-  "name": "viamichelin-node",
+  "name": "viamichelin-server",
   "version": "1.0.0",
-  "description": "Use viamichelin Api with WarpJS.",
   "main": "index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }

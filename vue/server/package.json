@@ -1,11 +1,10 @@
 {
-  "name": "http-proxy-server",
+  "name": "vue-server",
   "version": "1.0.0",
-  "description": "A simple HTTP Proxy with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
-  "main": "./index.js",
+  "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }

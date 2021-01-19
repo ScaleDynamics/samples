@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Twilio Node.js sample</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Twilio - Node.js API demo with WarpJS</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
-  <link rel="icon" href="favicon.ico" />
-</head>
-
-<body>
-  <img class="logo" src="logo.svg" alt="WarpJS" />
-  <h1>📨 Twilio - Node.js API demo with WarpJS</h1>
-  <div class="twilio-form">
-    <div id="loading" style="display:none">Sending SMS...</div>
-    <form id="form" class="form">
-      <input id="phone" name="phone" value="" type="phone" placeholder="Phone number" required>
-      <textarea id="message" rows="4" required placeholder="Message"></textarea>
-      <button class="button">Send SMS</button>
-    </form>
-  </div>
-  <div id="result"></div>
-  <script src="index.js"></script>
-</body>
-
+  <body>
+    <header>
+      <img class="logo" src="logo.png" alt="ScaleDynamics" />
+    </header>
+    <h1>📨 Send an SMS with Twilio</h1>
+    <div class="twilio-form">
+      <p id="loading" style="display: none">Sending SMS...</p>
+      <p id="result" style="display: none"></p>
+      <form id="form" class="form">
+        <input id="phone" name="phone" value="+15005550006" type="phone" placeholder="Phone number" required />
+        <textarea id="message" rows="4" required placeholder="Message">Hello folks!</textarea>
+        <button class="button">Send SMS</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

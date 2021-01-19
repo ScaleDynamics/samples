@@ -1,8 +1,8 @@
-# Sample - React Redux Saga with HTTP Node.js proxy
+# Sample - React Redux Saga
 
-Goal is to show you how to use WarpJS with React, Redux and Redux Saga. This sample displays users by requesting an HTTP Node.js proxy and implements a search.
+The sample shows you how to use the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/) with React, Redux and Redux-Saga. The web application displays a list of users by requesting an HTTP proxy on Node.js side with a search feature.
 
-👉 Try a [live demo](https://warpjs-15oybj8qayvmxe8vhzzhz1cum.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-react-redux-saga.scaledynamics.cloud)
 
 ## Setup
 
@@ -16,7 +16,7 @@ Goal is to show you how to use WarpJS with React, Redux and Redux Saga. This sam
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -37,5 +37,4 @@ $ npm run deploy
 - [Redux](https://redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
 - [Axios](https://www.npmjs.com/package/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

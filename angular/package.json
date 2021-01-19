@@ -2,15 +2,15 @@
   "name": "angular",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "cd ./server && npm install",
+    "postinstall": "cd server/ && npm install",
     "ng": "ng",
-    "start:client": "ng serve",
-    "start:server": "warp start-emulator -w ./server",
     "start": "run-p start:*",
-    "build:client": "ng build --prod",
-    "build:server": "warp build ./server",
+    "start:client": "ng serve",
+    "start:server": "warp dev server/",
     "build": "run-s build:server build:client",
-    "deploy": "warp deploy --asset-dir dist/angular ./server",
+    "build:client": "ng build --prod",
+    "build:server": "warp build server/",
+    "deploy": "warp deploy . server/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -25,7 +25,7 @@
     "@angular/platform-browser": "~9.1.2",
     "@angular/platform-browser-dynamic": "~9.1.2",
     "@angular/router": "~9.1.2",
-    "@warpjs/engine": "3.0.10",
+    "@warpjs/engine": "4.0.4",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -51,6 +51,6 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3",
-    "warp": "3.0.10"
+    "warp": "4.0.4"
   }
 }
