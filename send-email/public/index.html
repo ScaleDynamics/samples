@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Send Email sample</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="logo.png" alt="ScaleDynamics" />
+    </header>
+    <h1>Send Email sample</h1>
+    <h2>Fill the form to contact us</h2>
+    <div id="contact-form" class="contact-form">
+      <p v-if="isSending">Sending...</p>
+      <p v-if="preview">See preview email: <a :href="preview" target="_blank">{{ preview }}</a></p>
+      <form class="form" @submit.prevent="onSubmit">
+        <input required name="name" v-model="form.name" placeholder="Name" type="text" autocomplete="off" />
+        <input required name="email" v-model="form.email" placeholder="E-mail" type="email" autocomplete="off" />
+        <textarea required name="message" v-model="form.message" rows="4" placeholder="Message"></textarea>
+        <button class="button">Send</button>
+      </form>
+    </div>
+    <!-- import Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.scaledynamics.com/warp-engine/4.0.4/engine-web-prod.js"></script>
+    <script src="client.js"></script>
+    <script>
+      const Warp = window['send-email-client']
+      const { sendEmail } = new Warp()
+      new Vue({
+        el: '#contact-form',
+        data: {
+          form: {
+            name: 'John Doe',
+            email: 'john.doe@example.com',
+            message: 'Hello, I am interested in your product. Thanks to contact me.',
+          },
+          isSending: false,
+          preview: false,
+        },
+        methods: {
+          clearForm() {
+            for (const field in this.form) {
+              this.form[field] = ''
+            }
+          },
+          onSubmit() {
+            this.isSending = true
+            this.preview = false
+            sendEmail(this.form.name, this.form.email, this.form.message)
+              .then((result) => {
+                this.preview = result
+                // when response, clean form
+                this.clearForm()
+                this.isSending = false
+              })
+              .catch((e) => {
+                // display server error
+                this.isSending = false
+                alert(e.message)
+              })
+          },
+        },
+      })
+    </script>
+  </body>
+</html>

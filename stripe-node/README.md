@@ -1,6 +1,8 @@
 # Demo Stripe
 
-Make a payment with [Stripe](https://stripe.com) Node.js module and [WarpJS](https://warpjs.com).
+Make a payment with [Stripe](https://stripe.com) Node.js module and the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
+
+👉 Try a [live demo](https://sample-stripe-node.scaledynamics.cloud/)
 
 ## Setup
 
@@ -14,7 +16,7 @@ Make a payment with [Stripe](https://stripe.com) Node.js module and [WarpJS](htt
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -27,7 +29,7 @@ $ npx warp login
 3. Update the `STRIPE_TEST_API_KEY` value with yours
 
 ```js
-const stripe = require('stripe')('sk_test....')`
+const stripe = require('stripe')('sk_test...')`
 ```
 
 ## Run
@@ -43,6 +45,5 @@ $ npm run deploy
 
 ## Resources
 
-- [Stripe Node.js](https://www.npmjs.com/package/stripe)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [Stripe Node.js Library](https://www.npmjs.com/package/stripe)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

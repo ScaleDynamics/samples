@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img alt="WarpJS logo" class="logo" src="./assets/logo.svg" />
+    <header>
+      <img class="logo" src="./assets/logo.png" alt="ScaleDynamics" />
+    </header>
     <h1>Vue.js Sample with WarpJS</h1>
     <Users />
   </div>
@@ -12,8 +14,8 @@ import Users from './components/Users.vue'
 export default {
   name: 'App',
   components: {
-    Users
-  }
+    Users,
+  },
 }
 </script>
 
@@ -37,10 +39,12 @@ body {
 }
 
 .logo {
-  background-color: #000;
-  border-radius: 50%;
-  padding: 15px;
-  width: 200px;
-  height: 200px;
+  padding: 10px;
+  height: 150px;
+}
+
+header {
+  box-shadow: 0px 10px 10px 1px #ddd;
+  margin-bottom: 50px;
 }
 </style>

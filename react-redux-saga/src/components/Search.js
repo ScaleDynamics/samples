@@ -39,7 +39,7 @@ class Search extends React.Component {
           ref={this.search}
           onChange={this.handleChange}
         />
-        <div className='loading' style={{ display: request ? 'block' : 'none' }}>🍥</div>
+        <div className='loading' style={{ display: request ? 'block' : 'none' }}>⚙️</div>
       </div>
     )
   }

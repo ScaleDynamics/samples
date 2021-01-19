@@ -1,21 +1,20 @@
 {
   "name": "http-proxy",
   "version": "1.0.0",
-  "description": "A simple HTTP Proxy with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "main": "src/index.js",
   "scripts": {
-    "build": "warp build --output umd:dist/client.js .",
-    "deploy": "warp deploy --asset-dir dist/ .",
+    "build": "warp build --output umd:public/client.js .",
+    "deploy": "warp deploy . public/",
     "dev": "npx npm-run-all -p dev:server dev:client",
-    "dev:server": "warp start-emulator --output umd:dist/client.js --watch .",
-    "dev:client": "npx http-server -a 127.0.0.1 -c-1 dist/"
+    "dev:server": "warp dev --output umd:public/client.js",
+    "dev:client": "npx http-server -a 127.0.0.1 -c-1 public/"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
-    "warp": "3.0.10"
+    "warp": "4.0.4"
   }
 }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 
-// init WarpJS
+// init backend module
 import WarpServer from 'warp-server'
-const { getUsers } = new WarpServer()
+const { getUsers } = new WarpServer({}) as any
 
 @Component({
   selector: 'app-root',
@@ -14,9 +14,8 @@ export class UsersComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    getUsers().then((data) => {
-      this.users = data
-    })
+  async ngOnInit() {
+    // call backend function
+    this.users = await getUsers()
   }
 }

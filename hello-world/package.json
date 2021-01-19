@@ -1,19 +1,18 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "Hello World with WarpJS",
   "license": "MIT",
   "author": "ScaleDynamics SAS",
   "main": "src/index.js",
   "scripts": {
-    "build": "warp build --output umd:dist/client.js .",
-    "deploy": "warp deploy --asset-dir dist/ .",
     "dev": "npx npm-run-all -p dev:server dev:client",
-    "dev:server": "warp start-emulator --output umd:dist/client.js --watch .",
-    "dev:client": "npx http-server -a 127.0.0.1 -c-1 dist/"
+    "dev:server": "warp dev .",
+    "dev:client": "npx http-server -a 127.0.0.1 -c-1 public/",
+    "build": "warp build .",
+    "deploy": "warp deploy ."
   },
   "dependencies": {},
   "devDependencies": {
-    "warp": "3.0.10"
+    "warp": "4.0.4"
   }
 }

@@ -1,12 +1,12 @@
 # Create React App and WarpJS
 
-This sample shows you how to integrate WarpJS in a React project generated with `create-react-app`.
+This sample shows you how to integrate the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/) in a React project generated with `create-react-app`.
 
 ```bash
 $ npx create-react-app my-app
 ```
 
-👉 Try a [live demo](https://warpjs-0bvhul2n4rn58ukel5q6jvmr1.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-react.scaledynamics.cloud)
 
 ## Setup
 
@@ -18,7 +18,7 @@ $ npx create-react-app my-app
 # install deps
 $ yarn
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -35,7 +35,7 @@ $ yarn deploy
 
 ## Resources
 
+- [React](https://reactjs.org/)
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Axios](https://github.com/axios/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

@@ -1,10 +1,10 @@
 # Sample - MongoDB Movies
 
-Fetch a movie database with [WarpJS](https://warpjs.com) and [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb).
+Fetch a movie database with the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/) and [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb).
 
 On this sample, we fetch movies from the [Sample Mflix Dataset](https://docs.atlas.mongodb.com/sample-data/sample-mflix/) provided by MongoDB Atlas.
 
-👉 Try a [live demo](https://warpjs-a68gr3mmvvrp3wt84etkfyi5k.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-mongodb-movies.scaledynamics.cloud)
 
 ## Setup
 
@@ -16,7 +16,7 @@ On this sample, we fetch movies from the [Sample Mflix Dataset](https://docs.atl
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -35,5 +35,4 @@ $ npm run deploy
 
 - [MongoDB driver for Node.js](https://www.npmjs.com/package/mongodb)
 - [Sample Mflix Dataset from MongoDB Atlas](https://docs.atlas.mongodb.com/sample-data/sample-mflix/)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

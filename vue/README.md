@@ -1,13 +1,13 @@
 # Sample - Vue.js with WarpJS
 
-This sample shows you how to integrate WarpJS in a Vue.js project generated with Vue CLI.
+This sample shows you how to integrate [ScaleDynamics WarpJS SDK](https://scaledynamics.com/) in a Vue.js project generated with Vue CLI.
 
 ```bash
-$ npm install -g @vue/cli @vue/cli-service-global
+$ npm install -g @vue/cli
 $ vue create vue
 ```
 
-👉 Try a [live demo](https://warpjs-3u5wpzjmak37vkg9b4cswx6bj.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-vue.scaledynamics.cloud/)
 
 ## Setup
 
@@ -19,7 +19,7 @@ $ vue create vue
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -38,5 +38,4 @@ $ npm run deploy
 
 - [Vue CLI](https://cli.vuejs.org/)
 - [Axios](https://github.com/axios/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

@@ -7,17 +7,20 @@
 
 // init WarpJS
 import '@warpjs/engine'
-import WarpServer from 'warp-server'
+import WarpServer from './client'
 const { getRestaurants } = new WarpServer()
 
-// on load
-if (navigator.geolocation) {
-  result.innerHTML = '<h2>⚙️ Get your location...</h2>'
-  navigator.geolocation.getCurrentPosition(
-    function ({ coords }) {
-      result.innerHTML = '<h2>⚙️ Calling API...</h2>'
-      getRestaurants(coords.latitude, coords.longitude).then((list) => {
-        result.innerHTML = `
+const button = document.getElementById('button')
+const result = document.getElementById('result')
+
+button.addEventListener('click', function (event) {
+  if (navigator.geolocation || true) {
+    result.innerHTML = '<h2>⚙️ Get your location...</h2>'
+    navigator.geolocation.getCurrentPosition(
+      function ({ coords }) {
+        result.innerHTML = '<h2>⚙️ Calling API...</h2>'
+        getRestaurants(coords.latitude, coords.longitude).then((list) => {
+          result.innerHTML = `
             <h2>List of best restaurants at 10 km near you</h2>
             <div style="overflow-x:auto;">
               <table>
@@ -51,12 +54,13 @@ if (navigator.geolocation) {
                 </tbody>
               </table>
             </div>`
-      })
-    },
-    function () {
-      result.innerHTML = '<h2>Error accessing navigator.geolocation</h2>'
-    }
-  )
-} else {
-  result.innerHTML = '<h2>Unable to access navigator.geolocation</h2>'
-}
+        })
+      },
+      function () {
+        result.innerHTML = '<h2>Error accessing navigator.geolocation</h2>'
+      }
+    )
+  } else {
+    result.innerHTML = '<h2>Unable to access navigator.geolocation</h2>'
+  }
+})

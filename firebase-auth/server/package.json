@@ -1,12 +1,11 @@
 {
-  "name": "firebase-movies-server",
+  "name": "firebase-auth-server",
   "version": "1.0.0",
-  "description": "Demonstrate how to secure serverless function with Firebase Auth and WarpJS.",
-  "main": "./src/index.js",
+  "main": "src/index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",
   "dependencies": {
     "firebase-admin": "^8.9.2",
-    "mongodb": "^3.5.4"
+    "mongodb": "^3.6.3"
   }
 }

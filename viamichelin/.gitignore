@@ -2,5 +2,7 @@ node_modules/
 .cache
 .warp/
 dist/
+src/client.js
+src/client.d.ts
 
 .DS_Store

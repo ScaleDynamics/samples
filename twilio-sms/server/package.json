@@ -1,11 +1,10 @@
 {
-  "name": "twilio-sms-node",
+  "name": "twilio-sms-server",
   "version": "1.0.0",
-  "description": "Use Twilio Api on server side to send SMS.",
   "main": "index.js",
   "author": "ScaleDynamics SAS",
   "license": "MIT",
   "dependencies": {
-    "twilio": "^3.42.2"
+    "twilio": "^3.55.0"
   }
 }

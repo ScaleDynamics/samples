@@ -1,8 +1,8 @@
 # Sample - HTTP Proxy
 
-A simple HTTP proxy with [WarpJS](https://warpjs.com) from the [Getting Started](https://warpjs.dev/docs/getting-started).
+A simple HTTP proxy with [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
 
-👉 Try a [live demo](https://warpjs-4qv62ri7k697l8pn34tmpyj0b.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-http-proxy.scaledynamics.cloud)
 
 ## Setup
 
@@ -14,7 +14,7 @@ A simple HTTP proxy with [WarpJS](https://warpjs.com) from the [Getting Started]
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -31,5 +31,4 @@ $ npm run deploy
 
 ## Resources
 
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

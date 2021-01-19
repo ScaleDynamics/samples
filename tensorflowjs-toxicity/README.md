@@ -1,10 +1,10 @@
 # Sample - TensorFlow.js Toxicity
 
-Execute the [toxicity model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity) for [TensorFlow.js](https://www.tensorflow.org/js) on [WarpJS](https://warpjs.com).
+Execute the [toxicity model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity) for [TensorFlow.js](https://www.tensorflow.org/js) with the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
 
 The toxicity model detects whether text contains toxic content such as threatening language, insults, obscenities, identity-based hate, or sexually explicit language.
 
-👉 Try a [live demo](https://warpjs-744h4bixx1x93pg3oxc3hr4cf.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-tensorflowjs-toxicity.scaledynamics.cloud)
 
 ## Setup
 
@@ -16,7 +16,7 @@ The toxicity model detects whether text contains toxic content such as threateni
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -34,6 +34,5 @@ $ npm run deploy
 ## Resources
 
 - [TensorFlow.js](https://www.tensorflow.org/js)
-- [Toxicity model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [Toxicity Model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)

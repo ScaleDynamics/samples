@@ -20,6 +20,10 @@ const sendSms = async (phone, message) => {
     })
     return result.body
   } catch (err) {
+
+    // See help on error codes https://www.twilio.com/docs/authy/return-and-error-codes
+    console.log(err)
+
     if (err.status === 400) {
       // catch twilio bad request error
       throw new Error(err.message)

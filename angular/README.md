@@ -1,6 +1,6 @@
-# Sample - Angular with WarpJS
+# Sample - Angular
 
-This sample shows you how to integrate WarpJS in an Angular project generated with `angular/cli`.
+This sample shows you how to integrate [ScaleDynamics WarpJS SDK](https://scaledynamics.com/) in an Angular project generated with `angular/cli`.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.2.
 
@@ -9,7 +9,7 @@ $ npm install -g @angular/cli
 $ ng new angular
 ```
 
-👉 Try a [live demo](https://warpjs-b45bk2bxad26645dbbmfd33ih.storage.googleapis.com/index.html)
+👉 Try a [live demo](https://sample-angular.scaledynamics.cloud)
 
 ## Setup
 
@@ -21,7 +21,7 @@ $ ng new angular
 # install deps
 $ npm install
 
-# login to warpjs
+# login to ScaleDynamics
 $ npx warp login
 ```
 
@@ -39,6 +39,4 @@ $ npm run deploy
 ## Resources
 
 - [Angular CLI](https://angular.io/cli)
-- [Axios](https://github.com/axios/axios)
-- [Getting started with WarpJS](https://warpjs.dev/docs/getting-started)
-- [WarpJS Documentation](https://warpjs.dev)
+- [ScaleDynamics Documentation](https://docs.scaledynamics.com/)
