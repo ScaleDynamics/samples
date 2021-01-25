@@ -1,6 +1,6 @@
 # Sample - Hello World
 
-Hello World sample project with [ScaleDynamics](https://scaledynamics.com/).
+Hello World sample project with the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
 
 👉 Try a [live demo](https://sample-hello-world.scaledynamics.cloud)
 
