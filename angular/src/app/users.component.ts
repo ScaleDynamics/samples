@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 
 // init backend module
 import WarpServer from 'warp-server'
-const { getUsers } = new WarpServer({}) as any
+const { getUsers } = new WarpServer() as any
 
 @Component({
   selector: 'app-root',

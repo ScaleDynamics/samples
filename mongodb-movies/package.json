@@ -15,6 +15,6 @@
     "mongodb": "^3.6.3"
   },
   "devDependencies": {
-    "warp": "4.0.4"
+    "warp": "4.0.5"
   }
 }
