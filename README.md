@@ -1,33 +1,62 @@
 # ScaleDynamics - WarpJS Samples
 
-This repository contains a collection of samples using the [ScaleDynamics WarpJS SDK](https://scaledynamics.com/).
+This repository contains a collection of samples using the [WarpJS](https://docs.scaledynamics.com/) technology, for the [ScaleDynamics](https://scaledynamics.com) platform.
 
 ## What is WarpJS?
 
-WarpJS is a Function-as-a-Service (FaaS) platform with a unique serverless approach to code and deploy JavaScript applications in minutes.
+The ScaleDynamics' Cloud Suite streamlines the web and mobile apps development process for developers, DevOps and IT ops. It turns developers into full stacks with an outstanding experience from code to production, on any cloud (private and public cloud, or on-premise).
+
+It is composed of:
+
+- The Full Stack playground to prototype web apps in minutes.
+- WarpJS SDK to code & call services at warp speed by converting JavaScript modules into cloud hosted microservices.
+- The Virtual Cloud to deploy and run on any cloud.
 
 ## Prerequisites
 
-To learn how to get started with the ScaleDynamics WarpJS SDK, follow our [Getting Started](https://docs.scaledynamics.com/docs/getting-started) guide, try the [Hello World](./hello-world) sample and read the [documentation](https://docs.scaledynamics.com).
+To learn how to get started with WarpJS, follow our [Getting Started guide](https://docs.scaledynamics.com/docs/getting-started), and read the [documentation](https://docs.scaledynamics.com).
 
 ## Samples
 
-- [Angular](./angular) - Integration of WarpJS with Angular on an [`angular-cli`](https://angular.io/cli) project
-- [Dark Sky API](./darksky) - Get the weather from the Dark Sky REST API
-- [Facebook Authentication](./facebook-auth) - Secure server function with Facebook Login SDK and WarpJS
-- [Firebase Authentication](./firebase-auth) - Secure server function with Firebase and WarpJS
-- [Hello World](./hello-world) - A basic sample Hello World
-- [HTTP Proxy](./http-proxy) - A simple HTTP Proxy with Axios.
-- [MongoDB Movies](./mongodb-movies) - Fetch a movie database with WarpJS and MongoDB driver for Node.js
-- [OpenCage Geocoder API](./opencage-geocoder) - Get the physical address from a GPS location with OpenCage Geocoder API
-- [React](./react) - Integration of WarpJS with React on an [`create-react-app`](https://github.com/facebook/create-react-app) project
-- [React Redux Saga](./react-redux-saga) - Integration of WarpJS with React, Redux and Redux Saga
-- [Send Email](./send-email) - Create a simple "Contact us" form in Vue.js and send e-mail with Nodemailer on Node.js
-- [Stripe Node.js](./stripe-node) - Make a payment with Stripe Node.js module and WarpJS
-- [TensorFlow.js Toxicity](./tensorflowjs-toxicity) - Execute the toxicity model for TensorFlow.js on WarpJS
-- [Twilio SMS](./twilio-sms) - Send SMS with Twilio and WarpJS
-- [ViaMichelin API](./viamichelin) - Find the best restaurants near you from the ViaMichelin REST API
-- [Vue.js](./vue) - Integration of WarpJS with Vue.js on a [`Vue CLI`](https://cli.vuejs.org/) project
+### Basics
+
+- [Hello World](./hello-world)
+
+### Front end integration
+
+- [Angular](./angular)
+- [React](./react)
+- [React Redux Saga](./react-redux-saga)
+- [Vue.js](./vue)
+
+### Proxies & APIs
+
+- [HTTP Proxy](./http-proxy)
+- [Dark Sky API](./darksky)
+- [OpenCage Geocoder API](./opencage-geocoder)
+- [ViaMichelin API](./viamichelin)
+
+### Databases
+
+- [MongoDB Movies](./mongodb-movies)
+
+### Payment
+
+- [Stripe Node.js](./stripe-node)
+
+### Messaging
+
+- [Send Email](./send-email)
+- [Twilio SMS](./twilio-sms)
+
+### Authentication
+
+- [Facebook Authentication](./facebook-auth)
+- [Firebase Authentication](./firebase-auth)
+
+### Machine Learning
+
+- [TensorFlow.js Toxicity](./tensorflowjs-toxicity)
 
 ## License
 
