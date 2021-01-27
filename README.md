@@ -4,13 +4,11 @@ This repository contains a collection of samples using the [WarpJS](https://docs
 
 ## What is WarpJS?
 
-The ScaleDynamics' Cloud Suite streamlines the web and mobile apps development process for developers, DevOps and IT ops. It turns developers into full stacks with an outstanding experience from code to production, on any cloud (private and public cloud, or on-premise).
+WarpJS SDK is a unique technology created by ScaleDynamics to code and call microservices as fast as simple JavaScript modules. Built for production grade projects, it provides everything to develop and deploy from small to large projects, directly from a laptop, with a unique development experience and at light speed.
 
-It is composed of:
+It is connected to our SaaS which provides the development team everything needed to go to any cloud (or on-premise), transparently with zero DevOps skills or infrastructure knowledge.
 
-- The Full Stack playground to prototype web apps in minutes.
-- WarpJS SDK to code & call services at warp speed by converting JavaScript modules into cloud hosted microservices.
-- The Virtual Cloud to deploy and run on any cloud.
+You can test a live version of the WarpJS SDK on the [JavaScript Playground](https://playground.scaledynamics.cloud/). It allows coding directly from the browser both front-end and back-end snippets, running the preview in real time.
 
 ## Prerequisites
 
